@@ -1,4 +1,5 @@
 # sdxl-lightning-coophive-module
+
 Picossolano Coophive Module
 
 ```
@@ -18,14 +19,13 @@ docker run -ti --gpus all \
     -v $PWD/outputs:/outputs \
     -e OUTPUT_DIR=/outputs/ \
     -e PROMPT="an astronaut riding an orange horse" \
-    sdxl:v0.9
+    picassolano:v0.1
 ```
 
-Will overwrite `outputs/image0.png` each time.
+Will overwrite `outputs/output.png` each time.
 
 ### Coophive Module
 
 ```
-hive run sdxl:v0.3.0 -i Prompt="hiro saves the hive" -i Seed=16
+hive run picassolano:v0.1 -i Prompt="an amazing morning view with mountain near the lake" -i Seed=16
 ```
-
